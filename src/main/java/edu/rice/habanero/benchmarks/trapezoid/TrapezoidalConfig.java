@@ -53,7 +53,7 @@ public final class TrapezoidalConfig {
 
     protected static double fx(final double x) {
 
-        final double a = Math.sin(Math.pow(x, 3) - 1);
+        final double a = Math.sin(x*x*x - 1);
         final double b = x + 1;
         final double c = a / b;
         final double d = Math.sqrt(1 + Math.exp(Math.sqrt(2 * x)));
